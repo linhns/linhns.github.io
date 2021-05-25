@@ -1,2 +1,236 @@
-# linhns.github.io
-Personal Website repo
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/484e118132.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <title>Nguyen Son Linh's Personal Website</title>
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Nguyen Son Linh</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="row title-row">
+                <div class="col-lg-4">
+                    <img src="images/linhns.png" class="title-img" alt="title-image">
+                </div>
+
+                <div class="col-lg-8 biography">
+                    <h3>Biography</h3>
+                    <p>I'm currently an Computer Science undergrad at the National University of Singapore. Currently,
+                        my plan is to graduate on June 2023.</p>
+                    <p>In my free time, I try my hand at building products I like, including this website. I also play
+                        snooker.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <hr>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <p>Here are the projects that I have worked on. Click on the product to try it out</p>
+        <div class="list-group">
+            <a href="https://ay2021s2-cs2103t-t13-3.github.io/tp/" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">FlashBack</h5>
+                    <small class="text-muted">Jan - May, 2021</small>
+                </div>
+                <p class="mb-1">FlashBack is a flashcard app designed for students to improve memory retention via
+                    active recall. It is CLI-esque to cater to fast typists. This was made as the
+                    team project for the Software Engineering module in NUS.</p>
+                <small>Technologies: Java, Markdown</small>
+            </a>
+            <a href="https://linhns.shinyapps.io/datasciencecapstone/" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">NextWordPredictor</h5>
+                    <small class="text-muted">May - Aug, 2020</small>
+                </div>
+                <p class="mb-1">NextWordPredictor is a word suggester based on user input. This was built as the
+                    capstone project for the John Hopkins University Coursera Data Science course.</p>
+                <small class="text-muted">Technologies: R, RMarkdown</small>
+            </a>
+        </div>
+    </section>
+    <hr>
+
+    <section id="courses">
+        <h3>Courses</h3>
+        <p>This section contains all the courses I have taken in NUS</p>
+        <div class="container-fluid">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <h6>AY 19/20 Semester 1</h6>
+                    <ul class="module-list">
+                        <li>
+                            <span>CS1010E Programming Methodology</span>
+                        </li>
+                        <li>
+                            <span>GEH1035 Physical Questions in Everyday Life</span>
+                        </li>
+                        <li>
+                            <span>EG1311 Design and Make</span>
+                        </li>
+                        <li>
+                            <span>MA1511 Engineering Calculus</span>
+                        </li>
+                        <li>
+                            <span>MA1512 Differential Equations in Engineering</span>
+                        </li>
+                        <li>
+                            <span>EE1111A Electrical Engineering Principles and Practice I</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6>AY 19/20 Semester 2</h6>
+                    <ul class="module-list">
+                        <li>
+                            <span>CS2030 Programming Methodology II</span>
+                        </li>
+                        <li>
+                            <span>CS2100 Computer Organisation</span>
+                        </li>
+                        <li>
+                            <span>CS1231 Discrete Structure</span>
+                        </li>
+                        <li>
+                            <span>ST2334 Probability and Statistics</span>
+                        </li>
+                        <li>
+                            <span>GER1000 Quantitative Reasoning</span>
+                        </li>
+                        <li>
+                            <span>GEQ1000 Asking Questions</span>
+                        </li>
+                        <li>
+                            <span>MA1101R Linear Algebra I</span>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+                <div class="col">
+                    <h6>AY 20/21 Semester 1</h6>
+                    <ul class="module-list">
+                        <li>
+                            <span>CS2040 Data Structures and Algorithms</span>
+                        </li>
+                        <li>
+                            <span>CS2106 Operating Systems</span>
+                        </li>
+                        <li>
+                            <span>GET1004 Cyber Security</span>
+                        </li>
+                        <li>
+                            <span>GES1019 Managing Singapore's Built Environment</span>
+                        </li>
+                        <li>
+                            <span>IS1103 Ethics in Computing</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6>AY 20/21 Semester 2</h6>
+                    <ul class="module-list">
+                        <li>
+                            <span>CS103T Software Engineering</span>
+                        </li>
+                        <li>
+                            <span>CS2101 Effective Communication for Computing Professionals</span>
+                        </li>
+                        <li>
+                            <span>IS1103 Ethics in Computing (retake 😒😒😒)</span>
+                        </li>
+                        <li>
+                            <span>CS3230 Design and Analysis of Algorithms</span>
+                        </li>
+                        <li>
+                            <span>CS3243 Introduction to Artificial Intelligence</span>
+                        </li>
+                        <li>
+                            <span>PC1143 Introduction to Electricity and Magnetism</span>
+                        </li>
+
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>If you want to contact me on Facebook, Twitter or any means available below, feel free.</p>
+
+        <div class="container-fluid contacts">
+            <a href="https://github.com/linhns"><i class="bi bi-facebook social-icons"></i></a>
+            <a href="https://www.linkedin.com/in/nguyen-son-linh-1ab9b41b3/"><i class="bi bi-linkedin social-icons"></i></a>
+            <a href="https://t.me/linhns"><i class="bi bi-twitter social-icons"></i></a>
+            <a href="https://github.com/linhns"><i class="bi bi-github social-icons"></i></a>
+            <a href="https://t.me/linhns"><i class="bi bi-telegram social-icons"></i></a>
+            <a href="mailto:linhns59@gmail.com"><i class="bi bi-envelope-fill social-icons"></i></a>
+        </div>
+        
+    </section>
+    <hr>
+
+    <footer id="footer">
+        <span>© Copyright 2021 linhns </span>
+    </footer>
+</body>
+
+</html>
