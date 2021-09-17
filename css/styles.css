@@ -1,5 +1,10 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
     font-family: 'BioRhyme', serif;
+    font-weight: 700;
+}
+h5 {
+    font-family: 'BioRhyme', serif;
+    font-weight: 400;
 }
 
 p, span {
