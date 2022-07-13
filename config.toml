@@ -1,0 +1,33 @@
+# The URL the site will be built for
+base_url = "https://linhns.github.io/"
+
+# Site title and description. Used in Feeds by default
+title = "Nguyen Son Linh's Personal Website"
+
+# theme = "DeepThought"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+# Put all your custom variables here
+# accent_color = "green"
+# background_color = "dark"
+# logo_text = "linhns's personal website"
+# author = "linhns"
+# copyright_html = "© 2022. Made by linhns"
+navbar_items = [
+    { code = "en", nav_items = [
+        { url = "$BASE_URL", name = "Home" }
+    ]},
+]
+
+[extra.social]
