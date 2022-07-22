@@ -1,0 +1,32 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.top-navigation {
+    padding: 10px 40px;
+    // position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.5);
+    .links {
+        a {
+            padding: 15px 5px;
+            color: $links-color;
+            text-decoration: none;
+            &:hover {
+                color: $links-hover-color;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+}
+
+

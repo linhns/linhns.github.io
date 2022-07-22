@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) | safe }}">
     <title>
         {% block title %}
          {{ config.title }}
@@ -11,12 +12,18 @@
     </title>
 </head>
 <body>
+    <header>
+        <nav class="top-navigation">
+            <div class="logo">linhns</div>
+            <div class="links">
+                {% for link in config.extra.nav_links %}
+                    {% set url = link.url | replace(from="$BASE_URL", to=config.base_url) %}
+                    <a href="{{url | safe}}">{{link.name}}</a>
+                {% endfor %}
+            </div>
+        </nav>
+    </header>
     <div class="container">
-        {% block header %}
-        <header class="header">
-            
-        </header>
-        {% endblock header %}
 
         {% block content %}
          

@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://linhns.github.io/"
+base_url = "https://linhns.github.io"
 
 # Site title and description. Used in Feeds by default
 title = "Nguyen Son Linh's Personal Website"
@@ -24,10 +24,10 @@ highlight_code = false
 # logo_text = "linhns's personal website"
 # author = "linhns"
 # copyright_html = "© 2022. Made by linhns"
-navbar_items = [
-    { code = "en", nav_items = [
-        { url = "$BASE_URL", name = "Home" }
-    ]},
+nav_links = [
+    { url = "$BASE_URL/", name = "Home" },
+    { url = "$BASE_URL/projects", name = "Projects" },
+    { url = "$BASE_URL/blog", name = "Blog" },
 ]
 
 [extra.social]
