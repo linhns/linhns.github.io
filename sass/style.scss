@@ -14,10 +14,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(245, 245, 245, 0.5);
+    // background-color: rgba(245, 245, 245, 0.5);
     .links {
         a {
-            padding: 15px 5px;
+            padding: 15px 10px;
             color: $links-color;
             text-decoration: none;
             &:hover {
@@ -29,4 +29,18 @@
     }
 }
 
+.container {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.copyright-text {
+    color: gray;
+}
