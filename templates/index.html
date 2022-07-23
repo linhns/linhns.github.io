@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Example Website</h2>
+    <div class="avatar">
+        <img src="{{ get_url(path='images/linhns.png', trailing_slash=false) }}" alt="Avatar" class="avatar-img">
+    </div>
+    <div class="biography">
+        <p class="biography-text">
+            Hi, I'm Son Linh, a final year Computer Science student at the National University of Singapore.<br> 
+            In my free time, if not watching sports, I try new technologies to build stuff I like, including this website.
+        </p>
+    </div>
 {% endblock content %}

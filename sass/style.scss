@@ -32,6 +32,32 @@
 .container {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    padding: 10px 0;
+    margin: auto;
+    width: 95%;
+    text-align: center;
+}
+
+.avatar {
+    margin: 10px 0;
+}
+
+.avatar-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.biography {
+    width: 60%;
+    margin: auto;
+}
+
+.biography-text {
+    font-size: 125%;
+    line-height: 150%;
 }
 
 footer {
