@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Segoe UI', Roboto, Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .top-navigation {
     padding: 10px 40px;
     // position: fixed;
@@ -46,18 +50,30 @@
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
 
 .biography {
-    width: 60%;
+    width: 50%;
     margin: auto;
+    padding: 10px 20px;
 }
 
 .biography-text {
-    font-size: 125%;
-    line-height: 150%;
+    font-size: 115%;
+    line-height: 1.6;
+}
+
+.social-icon {
+    color: black;
+    stroke-width: 1;
+}
+
+.contact {
+    a {
+        padding: 0 10px;
+    }
 }
 
 footer {
