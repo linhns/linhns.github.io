@@ -1,0 +1,45 @@
+:root {
+    --text-primary-color: black;
+    --link-hover-color: teal;
+    --text-secondary-color: teal;
+}
+html {
+    font-size: calc(clamp(1rem, 0.75rem + 1.5vw, 2rem));
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+header {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        h2 {
+            color: var(--text-secondary-color);   
+            padding-inline: 3vw;
+        }
+        a {
+            text-decoration-line: none;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            flex: auto;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    border-block-end: 1px solid black;
+}
