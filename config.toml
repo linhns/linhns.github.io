@@ -14,8 +14,11 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+# Navbar items
 nav_items = [
     { url = "$BASE_URL", name = "Home" },
     { url = "$BASE_URL/projects", name = "Projects" },
     { url = "$BASE_URL/blog", name = "Blog" }
 ]
+# Current year
+year = 2022

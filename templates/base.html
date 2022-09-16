@@ -24,7 +24,12 @@
             </ul>
         </nav>
     </header>
-    {% block content %}
-    {% endblock %}
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <span>© {{config.extra.year}} Nguyen Son Linh</span>
+    </footer>
 </body>
 </html>

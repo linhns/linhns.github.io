@@ -2,6 +2,7 @@
     --text-primary-color: black;
     --link-hover-color: teal;
     --text-secondary-color: teal;
+    --border-style: 1px solid black;
 }
 html {
     font-size: calc(clamp(1rem, 0.75rem + 1.5vw, 2rem));
@@ -41,5 +42,13 @@ header {
             align-items: center;
         }
     }
-    border-block-end: 1px solid black;
+    border-block-end: var(--border-style);
+}
+
+footer {
+    font-size: 0.5rem;
+    text-align: center;
+    padding-block: 0.5vh;
+    border-block-start: var(--border-style);
+    margin-block: 1vh;
 }
