@@ -55,24 +55,42 @@ img {
     max-height: 300px;
 }
 
+.container {
+    margin: 1vw 1vh;
+}
+
 .index {
     text-align: center;
-    margin: 1vw 1vh;
     a {
         text-decoration: none;
         color: var(--text-secondary-color);
+        &:hover {
+            text-decoration: underline;
+        }
     }
-    a:hover {
-        text-decoration: underline;
+}
+
+.section {
+    &-title {
+        color: var(--text-secondary-color);
+    }
+    &-info {
+        > * {
+            margin-block: 0;
+        }
+        margin-block: 1vh 3vh;
     }
 }
 
 @media (min-width: 1000px) {
+    .container {
+        margin-inline: 10%;
+    }
     .index {
         display: inline-flex;
         align-items: center;
         justify-content: space-around;
-        margin-inline: 10%;
+        
     }
 }
 
