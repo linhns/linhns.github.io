@@ -1,0 +1,10 @@
+{% if src %}
+    <img src="{{src | safe}}"
+    {% if alt %}
+        alt="{{alt | safe}}"
+    {% endif %}
+    {% if class %}
+        class="{{class | safe}}"
+    {% endif %}
+    >
+{% endif %}
