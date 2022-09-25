@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="index">
+    <img src="{{ get_url(path='images/sketch.jpg', trailing_slash=false) }}" alt="Avatar" class="avatar">
+    <div>
+        
+    </div>
+    <p class="biography">
+        Hi, I'm Son Linh, a final year Computer Science student at the National University of Singapore.
+        In my free time, I try new technologies to build stuff I like, including this website. 
+        <br>
+        <br>
+        Projects I have done can be found <a href="{{config.base_url}}/projects">here</a> and my occasional ramblings can be found <a href="{{config.base_url}}/blog">here</a>
+    </p>
+</div>
+<div class="contact">
+    <a href="https://github.com/linhns"><i data-feather="github" class="social-icon"></i></a>
+    <a href="https://www.linkedin.com/in/linhns/" ><i data-feather="linkedin" class="social-icon"></i></a>
+</div>
+{% endblock content %}
