@@ -45,6 +45,52 @@ header {
     border-block-end: var(--border-style);
 }
 
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.avatar {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.index {
+    text-align: center;
+    margin: 1vw 1vh;
+    a {
+        text-decoration: none;
+        color: var(--text-secondary-color);
+    }
+    a:hover {
+        color: black;
+    }
+}
+
+@media (min-width: 1000px) {
+    .index {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-inline: 10%;
+    }
+}
+
+.feather {
+    width: calc(clamp(1rem, 0.75rem + 1.5vw, 2rem));
+    height: calc(clamp(1rem, 0.75rem + 1.5vw, 2rem));
+    margin-inline: 1vw;
+    stroke: currentColor;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.contact {
+    text-align: center;
+}
+
 footer {
     font-size: 0.5rem;
     text-align: center;
