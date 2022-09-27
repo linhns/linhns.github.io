@@ -7,7 +7,7 @@ description = "Here are the projects I have done."
 draft = false
 
 # Used to sort pages by "date", "update_date", "title", "title_bytes", "weight", or "none". See below for more information.
-sort_by = "none"
+sort_by = "weight"
 
 # Used by the parent section to order its subsections.
 # Lower values have higher priority.

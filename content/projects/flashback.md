@@ -1,6 +1,6 @@
 +++
-title = "Frum"
-description = "A forum built using Ruby on Rails."
+title = "FlashBack"
+description = "Flashcard app designed for fast-typing students to improve memory retention via active recall."
 
 # The date of the post.
 # Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
@@ -17,7 +17,7 @@ description = "A forum built using Ruby on Rails."
 # The weight as defined on the Section page of the documentation.
 # If the section variable `sort_by` is set to `weight`, then any page that lacks a `weight`
 # will not be rendered.
-weight = 0
+weight = 1
 
 # A draft page is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
@@ -51,7 +51,7 @@ template = "project.html"
 
 # Your own data.
 [extra]
-start_date = 2021-06-01
-end_date = 2021-08-01
+start_date = 2021-01-12
+end_date = 2021-05-30
 +++
 My first project.

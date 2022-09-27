@@ -3,6 +3,7 @@
     --link-hover-color: teal;
     --text-secondary-color: teal;
     --border-style: 1px solid black;
+    --muted-text-color: rgb(176, 176, 176);
 }
 html {
     font-size: calc(clamp(1rem, 0.75rem + 1.5vw, 2rem));
@@ -96,6 +97,14 @@ img {
             text-decoration: underline;
         }
     }
+    &-title {
+        display: flex;
+        flex: auto;
+        justify-content: space-between;
+    }
+}
+.muted {
+    color: var(--muted-text-color);
 }
 
 @media (min-width: 1000px) {
