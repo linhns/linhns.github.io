@@ -80,6 +80,22 @@ img {
         }
         margin-block: 1vh 3vh;
     }
+    &-pages {
+        > * + * {
+            border-block-start: var(--border-style);
+        } 
+    }
+}
+
+.card {
+    padding-block: 2vh;
+    a {
+        color: var(--text-secondary-color);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 @media (min-width: 1000px) {
