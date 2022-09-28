@@ -1,9 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ page.title }}
-</h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+<div class="project">
+	<div class="project-info">
+		<h2 class="project-title">
+			{{ page.title }}
+		</h2>
+		<div class="project-link">
+			{% if page.extra.link %}
+				<a href="{{page.extra.link | safe}}">Website</a>
+			{% endif %}
+		</div>
+	</div>
+	<div class="project-details">
+		{{ page.content | safe }}
+	</div>
+</div>
+
 {% endblock content %}

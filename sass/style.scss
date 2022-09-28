@@ -1,6 +1,7 @@
 :root {
     --text-primary-color: black;
     --link-hover-color: teal;
+    --link-color: teal;
     --text-secondary-color: teal;
     --border-style: 1px solid black;
     --muted-text-color: rgb(176, 176, 176);
@@ -16,8 +17,12 @@ html {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-secondary-color);
+}
+
 a {
-    color: var(--text-color);
+    color: var(--link-color);
 }
 
 a:hover {
@@ -33,6 +38,7 @@ header {
             padding-inline: 3vw;
         }
         a {
+            color: black;
             text-decoration-line: none;
         }
         ul {
@@ -64,7 +70,6 @@ img {
     text-align: center;
     a {
         text-decoration: none;
-        color: var(--text-secondary-color);
         &:hover {
             text-decoration: underline;
         }
@@ -91,7 +96,6 @@ img {
 .card {
     padding-block: 2vh;
     a {
-        color: var(--text-secondary-color);
         text-decoration: none;
         &:hover {
             text-decoration: underline;
@@ -105,6 +109,29 @@ img {
 }
 .muted {
     color: var(--muted-text-color);
+}
+
+.project {
+    &-title {
+        color: var(--text-secondary-color);
+    }
+    &-info {
+        > * {
+            margin-block: 0.5vh;
+        }
+        margin-block: 1vh 3vh;
+    }
+    &-link > a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &-details {
+        > p {
+            margin-block: 1vh;
+        }
+    }
 }
 
 @media (min-width: 1000px) {
@@ -139,5 +166,5 @@ footer {
     text-align: center;
     padding-block: 0.5vh;
     border-block-start: var(--border-style);
-    margin-block: 1vh;
+    margin-block: 3vh;
 }
