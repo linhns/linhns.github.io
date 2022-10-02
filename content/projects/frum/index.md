@@ -53,7 +53,8 @@ template = "project.html"
 [extra]
 start_date = 2021-06-01
 end_date = 2021-08-01
-link = "https://frum.herokuapp.com/"
+demo = "https://frum.herokuapp.com/"
+github = "https://github.com/linhns/frum"
 +++
 
 ![Frum demo page](frum.png)

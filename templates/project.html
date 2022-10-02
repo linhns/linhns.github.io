@@ -6,10 +6,16 @@
 		<h2 class="project-title">
 			{{ page.title }}
 		</h2>
-		<div class="project-link">
-			{% if page.extra.link %}
-				<a href="{{page.extra.link | safe}}">Website</a>
+		<div class="project-links">
+			{% if page.extra.demo %}
+				<a href="{{page.extra.demo | safe}}">Demo</a>
 			{% endif %}
+			
+			{% if page.extra.github %}
+				|
+				<a href="{{page.extra.github | safe}}">GitHub</a>
+			{% endif %}
+
 		</div>
 	</div>
 	<div class="project-details">

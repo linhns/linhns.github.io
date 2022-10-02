@@ -7,7 +7,7 @@
     --muted-text-color: rgb(176, 176, 176);
 }
 html {
-    font-size: calc(clamp(1rem, 0.75rem + 1.5vw, 2rem));
+    font-size: calc(clamp(0.75rem, 0.75rem + 1.25vw, 2rem));
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -119,9 +119,12 @@ img {
         > * {
             margin-block: 0.5vh;
         }
-        margin-block: 1vh 3vh;
+        margin-block: 1vh 2vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    &-link > a {
+    &-links > a {
         text-decoration: none;
         &:hover {
             text-decoration: underline;
