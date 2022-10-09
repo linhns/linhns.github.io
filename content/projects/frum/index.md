@@ -53,29 +53,35 @@ template = "project.html"
 [extra]
 start_date = 2021-06-01
 end_date = 2021-08-01
-demo = "https://frum.herokuapp.com/"
-github = "https://github.com/linhns/frum"
+links = [
+    { url = "https://frum.herokuapp.com", name = "Demo" },
+    { url = "https://github.com/linhns/frum", name = "GitHub" },
+]
 +++
 
 ![Frum demo page](frum.png)
 
 ### What is it
-Frum is a forum-based platform that can be used as a discussion board, 
-learning Q&A management, and more. 
+
+Frum is a forum-based platform that can be used as a discussion board,
+learning Q&A management, and more.
 
 ### Tech stack
-Frontend: *HTML, CSS, Bootstrap*
 
-Backend: *Ruby on Rails, PostgreSQL*
+Frontend: _HTML, CSS, Bootstrap_
+
+Backend: _Ruby on Rails, PostgreSQL_
 
 ### Features
-* Threaded discussion with replies
-* WYSIWYG editor
-* Access control 
+
+- Threaded discussion with replies
+- WYSIWYG editor
+- Access control
 
 ### Implementation
+
 Ruby on Rails was used as the backend to handle user authentication, posts and replies database migrations.
 Extra functionalities such as WYSIWYG editor and gravatar were added using Rails plugins and Rubygems.
-As security is of high importance, visiting the page will only show a login page and user account must be created by admin. 
+As security is of high importance, visiting the page will only show a login page and user account must be created by admin.
 
-*Note: Frum is hosted on Heroku and currently use a Heroku Postgres instance. As Heroku is moving its databases to paid tier, it is likely that Frum will not function correctly after November 28, 2022*
+_Note: Frum is hosted on Heroku and currently use a Heroku Postgres instance. As Heroku is moving its databases to paid tier, it is likely that Frum will not function correctly after November 28, 2022_

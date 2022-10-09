@@ -54,7 +54,9 @@ template = "project.html"
 start_date = 2020-05-20
 end_date = 2020-08-01
 technologies = ["R", "Markdown", "Shiny"]
-demo = "https://linhns.shinyapps.io/datasciencecapstone/"
+links = [
+    { url = "https://linhns.shinyapps.io/datasciencecapstone/", name = "Demo" },
+]
 +++
 
 ![NextWordPredictor UI](nwp.png)

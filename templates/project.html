@@ -7,15 +7,11 @@
 			{{ page.title }}
 		</h2>
 		<div class="project-links">
-			{% if page.extra.demo %}
-				<a href="{{page.extra.demo | safe}}">Demo</a>
-			{% endif %}
-			
-			{% if page.extra.github %}
+			{% for link in page.extra.links %}
+				<a href="{{link | safe}}">{{link.name}}</a>
+				{% if loop.last %} {% break %} {% endif %}
 				|
-				<a href="{{page.extra.github | safe}}">GitHub</a>
-			{% endif %}
-
+			{% endfor %}
 		</div>
 	</div>
 	<div class="project-details">

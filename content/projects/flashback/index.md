@@ -54,5 +54,10 @@ template = "project.html"
 start_date = 2021-01-12
 end_date = 2021-05-30
 technologies = ["Ruby", "Rails", "Bootstrap"]
+links = [
+    { url = "https://frum.herokuapp.com", name = "Demo" },
+    { url = "https://github.com/linhns/frum", name = "GitHub" },
+]
 +++
+
 My first project.
