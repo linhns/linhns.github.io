@@ -44,10 +44,13 @@ header {
       padding-inline: 3vw;
     }
     a {
-      color: black;
       text-decoration-line: none;
     }
+
     ul {
+      a {
+        color: black;
+      }
       display: flex;
       list-style: none;
       flex: auto;

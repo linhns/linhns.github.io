@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <h2>linhns</h2>
+            <h2><a href="{{config.base_url | safe}}">linhns</a></h2>
             <ul>
                 {% for item in config.extra.nav_items %}
                     {% set url = item.url | replace(from="$BASE_URL", to=config.base_url) %}
