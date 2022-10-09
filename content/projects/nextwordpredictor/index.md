@@ -53,6 +53,29 @@ template = "project.html"
 [extra]
 start_date = 2020-05-20
 end_date = 2020-08-01
-technologies = ["Ruby", "Rails", "Bootstrap"]
+technologies = ["R", "Markdown", "Shiny"]
+demo = "https://linhns.shinyapps.io/datasciencecapstone/"
 +++
-My first project.
+
+![NextWordPredictor UI](nwp.png)
+
+### What is it
+
+NextWordPredictor is a word suggestor based on user input. User can customised whether they want one, two or three suggestions.
+
+### Tech stack
+
+Frontend: _RMarkdown_
+
+Backend: _R, Shiny_
+
+### Features
+
+- Simple UI
+- Sensible prediction
+
+### Implementation
+
+Suggestions are based from a corpus of tweets, news and blogs, which are then filtered to remove profanities, punctuations and converted to lowercase.
+Further analysis shows that when users type a word, it is more likely that they are using a collocation of two words, therefore suggestions mainly focus on bigrams,
+with trigrams less considered. For example typing `go` will give 3 suggestions of `to`, `on`, and `home`, all of which form phrases that are ubiquitous in daily life.
