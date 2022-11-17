@@ -1,7 +1,7 @@
 +++
-title = "Projects"
+title = "Experience"
 
-description = "Here are the projects I have done."
+description = "My past and current occupations"
 
 # A draft section is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
@@ -14,14 +14,14 @@ sort_by = "weight"
 weight = 0
 
 # Template to use to render this section page.
-template = "project.html"
+template = "experience.html"
 
 # The given template is applied to ALL pages below the section, recursively.
 # If you have several nested sections, each with a page_template set, the page
 # will always use the closest to itself.
 # However, a page's own `template` variable will always have priority.
 # Not set by default.
-page_template = "project-page.html"
+# page_template = "project-page.html"
 
 # This sets the number of pages to be displayed per paginated page.
 # No pagination will happen if this isn't set or if the value is 0.
@@ -39,11 +39,11 @@ paginate_reversed = false
 # The default template can be overridden by creating an `anchor-link.html` file in the `templates` directory.
 # This value can be "left", "right", "heading" or "none".
 # "heading" means the full heading becomes the text of the anchor.
-insert_anchor_links = "none"
+insert_anchor_links = "heading"
 
 # If set to "true", the section pages will be in the search index. This is only used if
 # `build_search_index` is set to "true" in the Zola configuration file.
-in_search_index = true
+in_search_index = false
 
 # If set to "true", the section homepage is rendered.
 # Useful when the section is used to organize pages (not used directly).
@@ -73,3 +73,23 @@ generate_feed = false
 # Your own data.
 [extra]
 +++
+
+|                                  Position                                  |          Company           |    Start    |     End      |
+| :------------------------------------------------------------------------: | :------------------------: | :---------: | :----------: |
+| [Sofware Engineer Intern](#software-engineer-intern-at-omron-asia-pacific) | Omron Asia Pacific Pte Ltd | Jan 3, 2022 | Jun 17, 2022 |
+|             [Student Ambassador](#student-ambassador-for-nus)              |  NUS Office of Admissions  |  Aug 2021   |              |
+
+#### Software Engineer Intern at Omron Asia Pacific
+
+I was responsible for building robotic applications for Omron's slate of industrial robots,
+including autonomous mobile robot (AMR) and robotic arm. I mainly worked with ROS2.
+
+I programmed and tested an integration of Omron AMRs with the [Robotics Middleware Framework](https://github.com/open-rmf/rmf_demos).
+I also devised and coded a procedure to align an AMR with a cart using fiducial markers.
+
+#### Student Ambassador for NUS
+
+As a student ambassador, my main task is to give advice and provide guidance to
+prospective undergraduate students (current students also have, but less likely)
+looking to apply to NUS, whether it is application details, student activities,
+scholarship oppotunities,...
