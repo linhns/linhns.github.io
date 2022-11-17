@@ -1,6 +1,6 @@
 +++
 title = "Human Activities Recognition"
-description = "Recognition of human activities using machine learning"
+description = "Application of well-known machine learning algorithm such as SVM, KNN, Linear Regression, Decision Tree and deep learning models CNN, RNN to predict human activities using sensor data."
 
 # The date of the post.
 # Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
@@ -42,7 +42,7 @@ aliases = []
 in_search_index = true
 
 # Template to use to render this page.
-template = "project.html"
+# template = "project.html"
 
 # The taxonomies for this page. The keys need to be the same as the taxonomy
 # names configured in `config.toml` and the values are an array of String objects. For example,
@@ -57,11 +57,12 @@ technologies = ["Python", "Scikit-learn", "PyTorch", "Numpy", "Pandas", "Tensorf
 links = [
     { url = "https://bit.ly/3rKEy5v", name = "Presentation" },
 ]
+short_description = "Human activities recognition"
 +++
 
-### What is it
+### What I did
 
-Application of well-known machine learning algorithm such as SVM, KNN, Linear Regression, Decision Tree and deep learning models CNN, RNN to predict human activities using sensor data.
+My job was to create a data preprocessing pipeline for teammates to follow. I was also responsible for SVM part.
 
 ### Implementation
 

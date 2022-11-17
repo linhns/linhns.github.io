@@ -42,7 +42,7 @@ aliases = []
 in_search_index = true
 
 # Template to use to render this page.
-template = "project.html"
+# template = "project.html"
 
 # The taxonomies for this page. The keys need to be the same as the taxonomy
 # names configured in `config.toml` and the values are an array of String objects. For example,
@@ -55,9 +55,14 @@ start_date = 2021-01-12
 end_date = 2021-05-30
 technologies = ["Ruby", "Rails", "Bootstrap"]
 links = [
-    { url = "https://frum.herokuapp.com", name = "Demo" },
-    { url = "https://github.com/linhns/frum", name = "GitHub" },
+    { url = "https://ay2021s2-cs2103t-t13-3.github.io/tp/", name = "Website" },
+    { url = "https://github.com/linhns/tp", name = "GitHub" },
 ]
+short_description = "A flashcard app"
 +++
 
-My first project.
+In the project's website, there are links to user and developer guide, please visit and check them out for all information regarding this project.
+
+### What I did
+
+I implemented and tested sort and filter functionalities.

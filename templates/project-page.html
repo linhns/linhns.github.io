@@ -1,0 +1,25 @@
+{% extends "page.html" %}
+
+{% block subcontent %}
+<div class="project">
+	<div class="project-info">
+		<h2 class="project-title">
+			{{ page.title }}
+		</h2>
+		<p class="project-description">
+			{{ page.description }}
+		</p>
+		<div class="project-links">
+			{% for link in page.extra.links %}
+				<a href="{{link | safe}}">{{link.name}}</a>
+				{% if loop.last %} {% break %} {% endif %}
+				|
+			{% endfor %}
+		</div>
+	</div>
+	<div class="project-details">
+		{{ page.content | safe }}
+	</div>
+</div>
+
+{% endblock subcontent %}

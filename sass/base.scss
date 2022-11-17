@@ -9,7 +9,7 @@ html {
     background-color: rgb(248, 248, 248);
     font-family: "Source Code Pro", monospace;
     line-height: 1.15;
-    font-size: calc(clamp(16px, calc(0.75rem + 1vw), 24px));
+    // font-size: calc(clamp(16px, calc(0.75rem + 1vw), 24px));
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,9 +60,9 @@ body {
     margin-block: 2vh 1vh;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+img {
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 .prompt {

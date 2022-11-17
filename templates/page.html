@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% set parts = section.relative_path | split(pat='/') %}
+    {% set parts = page.relative_path | split(pat='/') %}
 	{% if parts[0] %}
 		{% set dir = parts[0] %}
 		{{ prompt_macros::prompt(path="~", command="cd " ~ dir) }}
-		{{ prompt_macros::prompt(path="~/" ~ dir, command="ls") }}
+        {% if parts[1] %}
+		    {% set file = parts[1] %}
+		    {{ prompt_macros::prompt(path="~/" ~ dir, command="cat " ~ file ~ "/index.md") }}
+	    {% endif %}
 	{% endif %}
     {% block subcontent %}
      

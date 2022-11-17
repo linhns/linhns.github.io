@@ -1,6 +1,6 @@
 +++
 title = "NextWordPredictor"
-description = "A word suggester based on user input."
+description = "NWP is a input suggestor. It simply takes what user types and generates suggestions for the next word."
 
 # The date of the post.
 # Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
@@ -42,7 +42,7 @@ aliases = []
 in_search_index = true
 
 # Template to use to render this page.
-template = "project.html"
+# template = "project.html"
 
 # The taxonomies for this page. The keys need to be the same as the taxonomy
 # names configured in `config.toml` and the values are an array of String objects. For example,
@@ -57,13 +57,10 @@ technologies = ["R", "Markdown", "Shiny"]
 links = [
     { url = "https://linhns.shinyapps.io/datasciencecapstone/", name = "Demo" },
 ]
+short_description = "A word suggestor"
 +++
 
 ![NextWordPredictor UI](nwp.png)
-
-### What is it
-
-NextWordPredictor is a word suggestor based on user input. User can customised whether they want one, two or three suggestions.
 
 ### Tech stack
 
@@ -73,8 +70,12 @@ Backend: _R, Shiny_
 
 ### Features
 
-- Simple UI
-- Sensible prediction
+-   Simple UI
+-   Sensible prediction
+
+### What I did
+
+Everything
 
 ### Implementation
 
