@@ -97,7 +97,7 @@ img {
     }
 }
 
-.end-prompt .prompt-command {
+.blinking-cursor {
     color: black;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
@@ -106,11 +106,12 @@ img {
     animation: 1s blink step-end infinite;
 }
 
-@keyframes blink {
+@keyframes "blink" {
     from,
     to {
         color: transparent;
     }
+
     50% {
         color: black;
     }
@@ -121,36 +122,40 @@ img {
     to {
         color: transparent;
     }
+
     50% {
         color: black;
     }
 }
 
-@-webkit-keyframes blink {
+@-webkit-keyframes "blink" {
     from,
     to {
         color: transparent;
     }
+
     50% {
         color: black;
     }
 }
 
-@-ms-keyframes blink {
+@-ms-keyframes "blink" {
     from,
     to {
         color: transparent;
     }
+
     50% {
         color: black;
     }
 }
 
-@-o-keyframes blink {
+@-o-keyframes "blink" {
     from,
     to {
         color: transparent;
     }
+
     50% {
         color: black;
     }
