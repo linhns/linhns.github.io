@@ -60,9 +60,28 @@ body {
     margin-block: 2vh 1vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
 img {
     max-inline-size: 100%;
     block-size: auto;
+}
+
+::selection {
+    background: black;
+    color: white;
+}
+
+::-moz-selection {
+    background: black;
+    color: white;
 }
 
 .prompt {
