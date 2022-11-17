@@ -1,0 +1,49 @@
+:root {
+    --secondary-color: rgb(34, 128, 71);
+    --primary-color: rgb(40, 101, 123);
+    --tertiary-color: rgb(156, 49, 7);
+    --border-style: 1px solid black;
+}
+
+html {
+    background-color: rgb(248, 248, 248);
+    font-family: "Source Code Pro", monospace;
+    line-height: 1.15;
+    font-size: clamp(16px, calc(1vw), 24px);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+body {
+    margin-block: 2vh 1vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prompt {
+    font-weight: bold;
+    &-whoami {
+        color: var(--secondary-color);
+    }
+    &-path {
+        color: var(--primary-color);
+    }
+    &-command {
+        font-weight: normal;
+    }
+}

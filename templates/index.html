@@ -1,21 +1,52 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="index">
-    <img src="{{ get_url(path='images/sketch.jpg', trailing_slash=false) }}" alt="Avatar" class="avatar">
-    <div>
-        
-    </div>
-    <p class="biography">
-        Hi, I'm Son Linh, a final year Computer Science student at the National University of Singapore.
-        In my free time, I try new technologies to build stuff I like, including this website. 
-        <br>
-        <br>
-        Projects I have done can be found <a href="{{config.base_url}}/projects">here</a> and my occasional ramblings can be found <a href="{{config.base_url}}/blog">here</a>
-    </p>
-</div>
-<div class="contact">
-    <a href="https://github.com/linhns"><i data-feather="github" class="social-icon"></i></a>
-    <a href="https://www.linkedin.com/in/linhns/" ><i data-feather="linkedin" class="social-icon"></i></a>
+<div class="about">
+    {{ prompt_macros::prompt(path="~", command="cat about.txt") }}
+    <section>
+        <h5 class="about-question">
+            What's my name?
+        </h5>
+        <p class="about-answer">
+            Nguyen Son Linh
+        </p>
+    </section>
+    <section>
+        <h5 class="about-question">
+            Who am I?
+        </h5>
+        <p class="about-answer">
+            I'm a programmer and currently a student at the National University of Singapore. My interests are artificial intelligence, good software and Rust (best language I've ever used!).
+            Also a big sports fan.
+        </p>
+    </section>
+    <section>
+        <h5 class="about-question">
+            Where can I be found?
+        </h5>
+        <p class="about-answer">
+            <ul>
+                <li>
+                    <a href="https://github.com/linhns">github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/linhns/">linkedin</a>
+                </li>
+            </ul>
+        </p>
+    </section>
+    <section>
+        <h5 class="about-question">
+            How to contact me?
+        </h5>
+        <p class="about-answer">
+            <ul>
+                <li>
+                    <span>email: linhns59 (at) gmail (dot) com</span>
+                </li>
+            </ul>
+        </p>
+    </section>
+
 </div>
 {% endblock content %}

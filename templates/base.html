@@ -1,28 +1,28 @@
+{% import "macros/prompt.html" as prompt_macros -%}
+{% import "macros/head.html" as head_macros -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    {{ head_macros::fonts() }}
     <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) | safe }}">
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Nguyen Son Linh's Personal Website</title>
 </head>
 <body>
     <header>
-        <nav>
-            <h2><a href="{{config.base_url | safe}}">linhns</a></h2>
-            <ul>
-                {% for item in config.extra.nav_items %}
-                    {% set url = item.url | replace(from="$BASE_URL", to=config.base_url) %}
-                    <li>
-                        <a href="{{url | safe}}">{{item.name}}</a>
-                    </li>
-                {% endfor %}
-            </ul>
+        {{ prompt_macros::prompt(path="~", command="ls") }}
+        <nav class="nav">
+            {% for item in config.extra.nav_items %}
+                {% set url = item.url | replace(from="$BASE_URL", to=config.base_url) %}
+                {% if item.name is matching("([A-Za-z0-9])+\.([A-Za-z0-9])+") %}
+                    <a href="{{url | safe}}" class="nav-file-link">{{item.name}}</a>  
+                {% else %}
+                    <a href="{{url | safe}}" class="nav-subpage-link">{{item.name}}</a>   
+                {% endif %}
+            {% endfor %}
         </nav>
     </header>
     <div class="container">
@@ -30,8 +30,7 @@
         {% endblock %}
     </div>
     <footer>
-        <span>© {{config.extra.year}} Nguyen Son Linh.</span>
-        <span>Powered by <a href="https://www.getzola.org/">Zola</a></span>
+        <span>© {{config.extra.year}} Nguyen Son Linh</span>
     </footer>
     <script>
         feather.replace()
