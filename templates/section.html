@@ -3,11 +3,12 @@
 {% block content %}
     {% set parts = section.relative_path | split(pat='/') %}
 	{% if parts[0] %}
-		{% set dir = parts[0] %}
+		{% set_global dir = parts[0] %}
 		{{ prompt_macros::prompt(path="~", command="cd " ~ dir) }}
 		{{ prompt_macros::prompt(path="~/" ~ dir, command="ls") }}
 	{% endif %}
     {% block subcontent %}
      
     {% endblock subcontent %}
+	{{ prompt_macros::prompt(path="~/" ~ dir, command="|", class="blinking-cursor") }}
 {% endblock content %}

@@ -1,5 +1,5 @@
 {% macro prompt(path, command="", class="") %}
     <div class="prompt">
-        <a href="{{config.base_url}}" class="prompt-whoami">linhns@website</a> :: <span class="prompt-path">{{path}}</span> $ <span class="prompt-command {{class}}">{{command}}</span>
+        <a href="{{config.base_url}}" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">{{path}}</span> $ <span class="prompt-command {{class}}">{{command}}</span>
     </div>
 {% endmacro prompt %}   

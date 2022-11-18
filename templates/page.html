@@ -7,10 +7,15 @@
 		{{ prompt_macros::prompt(path="~", command="cd " ~ dir) }}
         {% if parts[1] %}
 		    {% set file = parts[1] %}
-		    {{ prompt_macros::prompt(path="~/" ~ dir, command="cat " ~ file ~ "/index.md") }}
+			{% if parts[2] %}
+				{{ prompt_macros::prompt(path="~/" ~ dir, command="cat " ~ file ~ "/" ~ parts[2]) }}
+			{% else %}
+		    	{{ prompt_macros::prompt(path="~/" ~ dir, command="cat " ~ file) }} 
+	    	{% endif %}
 	    {% endif %}
 	{% endif %}
     {% block subcontent %}
      
     {% endblock subcontent %}
+	{{ prompt_macros::prompt(path="~/" ~ dir, command="|", class="blinking-cursor") }}
 {% endblock content %}
