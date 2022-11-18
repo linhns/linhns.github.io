@@ -1,6 +1,11 @@
 {% extends "page.html" %}
 {% block subcontent %}
 <div class="post-content">
+    {% if page.taxonomies.tags %}
+    <div>
+        {{ page.taxonomies.tags }}
+    </div>
+    {% endif %}
     {{ page.content | safe }}
 </div>
 {% endblock subcontent %}

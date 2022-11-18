@@ -69,6 +69,16 @@ h6 {
     color: var(--primary-color);
 }
 
+ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+li::marker {
+    content: "- ";
+}
+
 img {
     max-inline-size: 100%;
     block-size: auto;
@@ -95,6 +105,16 @@ img {
     &-command {
         font-weight: normal;
     }
+}
+
+.container {
+    .prompt + :not(.prompt) {
+        margin-block: 2vh;
+    }
+}
+
+.pagination {
+    margin-block: 2vh;
 }
 
 .blinking-cursor {

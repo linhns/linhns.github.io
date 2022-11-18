@@ -7,6 +7,19 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+# The taxonomies to be rendered for the site and their configuration of the default languages
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [
+    {name = "tags", paginate_by = 10},
+]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -19,6 +32,7 @@ nav_items = [
     { url = "$BASE_URL/experience", name = "experience" },
     { url = "$BASE_URL/projects", name = "projects" },
     { url = "$BASE_URL/blog", name = "blog" },
+    { url = "$BASE_URL/tags", name = "tags" },
     { url = "$BASE_URL", name = "about.txt" },
     { url = "$BASE_URL/cv.pdf", name = "cv.pdf" },
 ]

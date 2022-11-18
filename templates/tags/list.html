@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+{{ prompt_macros::prompt(path="~", command="cd tags") }}
+{{ prompt_macros::prompt(path="~/tags", command="ls") }}
+<div class="tags">
+    <p>There are <strong>{{terms | length}}</strong> tags in total.</p>
+    <ul>
+        {% for tag in terms %}
+            <li class="tag">
+                <a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}" class="mr-4">
+                    <span>{{tag.name}}</span>
+                  </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{{ prompt_macros::prompt(path="~/tags", command="|", class="blinking-cursor") }}
+{% endblock content %}

@@ -1,6 +1,5 @@
 .projects {
     &-list {
-        margin-block: 2vh 0;
         > * + * {
             margin-block: 3vh 0;
         }
@@ -8,14 +7,6 @@
             &-page-link {
                 font-weight: bold;
             }
-        }
-    }
-}
-
-.project {
-    &-details {
-        ul {
-            list-style-type: square;
         }
     }
 }

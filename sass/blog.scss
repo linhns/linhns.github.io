@@ -1,6 +1,5 @@
-.posts {
-    margin-block: 2vh 1vh;
-    > * + * {
+.post {
+    + .post {
         margin-top: 10px;
     }
     a {
@@ -17,8 +16,4 @@
             }
         }
     }
-}
-
-.pagination {
-    margin-block: 2vh;
 }

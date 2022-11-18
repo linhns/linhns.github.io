@@ -48,7 +48,7 @@ template = "blog-page.html"
 # names configured in `config.toml` and the values are an array of String objects. For example,
 # tags = ["rust", "web"].
 [taxonomies]
-
+tags = ["rust", "web"]
 # Your own data.
 [extra]
 +++

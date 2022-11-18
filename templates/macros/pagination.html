@@ -1,0 +1,19 @@
+{% macro paginator() %}
+{% if paginator.number_pagers != 1 %}
+<nav class="pagination">
+    <a class="first" href="{{ paginator.first }}">First</a>
+    {% if paginator.previous %}
+    <a class="previous" href="{{ paginator.previous }}">Prev</a>
+    {% else %}    
+    <a class="previous" href="{{ current_path }}">Prev</a>
+    {% endif %}
+    <span class="current">{{paginator.current_index}}</span>
+    {% if paginator.next %}
+    <a class="next" href="{{ paginator.next }}">Next</a>
+    {% else %}
+    <a class="next" href="{{ current_path }}">Next</a>
+    {% endif %}
+    <a class="last" href="{{ paginator.last }}">Last</a>
+</nav>
+{% endif %}
+{% endmacro paginator %}

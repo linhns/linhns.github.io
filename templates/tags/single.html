@@ -1,0 +1,24 @@
+{% import "macros/pagination.html" as pagination_macros -%}
+{% extends "base.html" %}
+{% block content %}
+{{ prompt_macros::prompt(path="~", command="cd tags") }}
+{{ prompt_macros::prompt(path="~/tags", command="grep -rnw ~/blogs/*.md -e 'tags = \[.*" ~ term.name ~ ".*\]'") }}
+<div class="posts-with-tag">
+    {% if paginator %}
+        {% set pages = paginator.pages %}
+        {% set total_pages = paginator.total_pages %}
+    {% else %}
+        {% set pages = term.pages %}
+        {% set total_pages = pages | length %}
+    {% endif %}
+    <p>There are <strong>{{total_pages}}</strong> posts with tag <a href="{{term.permalink}}">{{term.name}}</a></p>
+    {% for page in pages %}
+        <article class="post">
+            <span>* {{page.date | date(format="%d/%m/%Y", timezone="Asia/Singapore", locale="en_SG")}} -</span>
+            <a href="{{ page.permalink }}">{{page.title}}</a>
+        </article>
+    {% endfor %}
+    {{ pagination_macros::paginator() }}
+</div>
+{{ prompt_macros::prompt(path="~/tags", command="|", class="blinking-cursor") }}
+{% endblock content %}
