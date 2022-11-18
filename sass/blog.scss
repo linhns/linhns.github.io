@@ -1,5 +1,5 @@
-.post {
-    + .post {
+.blog-short {
+    + .blog-short {
         margin-top: 10px;
     }
     a {
@@ -15,5 +15,36 @@
                 color: black;
             }
         }
+    }
+}
+.blog {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
+    .title {
+        margin-block: 0 2vh;
+        text-decoration: underline double var(--primary-color);
+        text-underline-offset: 2px;
+    }
+    .metadata {
+        margin-block: 2vh;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background: #000;
+        background: repeating-linear-gradient(
+            90deg,
+            #000,
+            #000 8px,
+            transparent 8px,
+            transparent 16px
+        );
     }
 }

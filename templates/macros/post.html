@@ -1,0 +1,22 @@
+{% import "macros/tag.html" as tag_macros -%}
+
+{% macro render_metadata(page) %}
+<div class="metadata">
+	<div class="published-date">
+		<span>Published on <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time></span>
+	</div>
+	<div class="updated-date">
+		<span>Last updated on
+			<time datetime="{{ page.updated }}">
+				{{ page.date | date(format='%B %d, %Y')}}
+			</time>
+		</span>
+	</div>
+	{{ tag_macros::render_tags(tags=page.taxonomies.tags) }}
+	<div class="reading-time">
+		<span>Reading time: {{page.reading_time}}
+			{% if page.reading_time == 1 %}minute{% else %}minutes{% endif %}
+		</span>
+	</div>
+</div>
+{% endmacro %}

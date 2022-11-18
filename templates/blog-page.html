@@ -1,11 +1,15 @@
+{% import "macros/post.html" as post_macros -%}
 {% extends "page.html" %}
 {% block subcontent %}
-<div class="post-content">
-    {% if page.taxonomies.tags %}
-    <div>
-        {{ page.taxonomies.tags }}
-    </div>
-    {% endif %}
-    {{ page.content | safe }}
+<div class="blog">
+    <article>
+        <div class="title">
+            <h1>{{page.title}}</h1>
+        </div>
+        <hr>
+        {{ post_macros::render_metadata(page=page) }}
+        <hr>
+        {{page.content | safe}}
+    </article>
 </div>
 {% endblock subcontent %}

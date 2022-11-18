@@ -45,12 +45,11 @@ in_search_index = true
 template = "blog-page.html"
 
 # The taxonomies for this page. The keys need to be the same as the taxonomy
-# names configured in `config.toml` and the values are an array of String objects. For example,
-# tags = ["rust", "web"].
+# names configured in `config.toml` and the values are an array of String objects
 [taxonomies]
-tags = ["web"]
+tags = ["web", "zola", "sass"]
 # Your own data.
 [extra]
 +++
 
-My first post.
+# My first post.

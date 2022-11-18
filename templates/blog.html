@@ -1,12 +1,12 @@
 {% import "macros/pagination.html" as pagination_macros -%}
 {% extends "section.html" %}
 {% block subcontent %}
-<div class="posts">
+<div class="blogs">
     {% for page in paginator.pages %}
-        <article class="post">
-            <span>* {{page.date | date(format="%d/%m/%Y", timezone="Asia/Singapore", locale="en_SG")}} -</span>
-            <a href="{{ page.permalink }}">{{page.title}}</a>
-        </article>
+    <div class="blog-short">
+        <span>* {{page.date | date(format="%d/%m/%Y", timezone="Asia/Singapore", locale="en_SG")}} -</span>
+        <a href="{{ page.permalink }}">{{page.title}}</a>
+    </div>
     {% endfor %}
 </div>
 {{ pagination_macros::paginator() }}
