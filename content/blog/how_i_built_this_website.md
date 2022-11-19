@@ -20,7 +20,7 @@ updated = "2022-11-19"
 weight = 0
 
 # A draft page is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
-draft = true
+draft = false
 
 # If set, this slug will be used instead of the filename to make the URL.
 # The section path will still be used.
