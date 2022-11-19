@@ -1,16 +1,14 @@
-.blog-short {
+.blog-short,
+.blog {
     + .blog-short {
         margin-top: 10px;
     }
     a {
-        text-decoration: underline;
         &:visited {
             color: black;
         }
         &:hover {
-            background: var(--primary-color);
-            color: white;
-            &:hover {
+            &:visited {
                 background-color: rgba(0, 0, 0, 0.3);
                 color: black;
             }
@@ -24,16 +22,34 @@
     h4,
     h5,
     h6 {
-        margin: 0;
+        margin: 1vh 0;
         padding: 0;
+        &::before {
+            display: inline;
+        }
     }
     .title {
         margin-block: 0 2vh;
         text-decoration: underline double var(--primary-color);
         text-underline-offset: 2px;
+        h1 {
+            &::before {
+                content: initial;
+            }
+        }
     }
     .metadata {
         margin-block: 2vh;
+        .tags {
+            a {
+                border: none;
+                color: var(--primary-color);
+                &:hover {
+                    background: none;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
     hr {
         border: none;
@@ -46,5 +62,65 @@
             transparent 8px,
             transparent 16px
         );
+    }
+    .content {
+        margin-block: 2vh;
+        a {
+            color: var(--primary-color);
+            &:visited {
+                color: var(--primary-color);
+                background-color: var(--primary-bg-color);
+            }
+        }
+        blockquote {
+            font-style: italic;
+            margin: 0;
+            padding: 2px 10px;
+            background-color: lightgray;
+        }
+    }
+    h1 {
+        &::before {
+            content: "# ";
+        }
+    }
+    h2 {
+        &::before {
+            content: "## ";
+        }
+    }
+    h3 {
+        &::before {
+            content: "### ";
+        }
+    }
+    h4 {
+        &::before {
+            content: "#### ";
+        }
+    }
+    h5 {
+        &::before {
+            content: "##### ";
+        }
+    }
+    h6 {
+        &::before {
+            content: "###### ";
+        }
+    }
+    .zola-anchor {
+        border: none;
+        color: var(--primary-color);
+        &:visited {
+            color: var(--primary-color);
+        }
+        &:hover {
+            background: none;
+            text-decoration: underline;
+            &:visited {
+                color: var(--primary-color);
+            }
+        }
     }
 }

@@ -1,6 +1,8 @@
 :root {
     --secondary-color: rgb(34, 128, 71);
+    --secondary-bg-color: rgb(34, 128, 71, 0.3);
     --primary-color: rgb(40, 101, 123);
+    --primary-bg-color: rgb(40, 101, 123, 0.3);
     --tertiary-color: rgb(156, 49, 7);
     --border-style: 1px solid black;
 }
@@ -51,8 +53,9 @@ html {
 a {
     color: var(--primary-color);
     text-decoration: none;
+    border-bottom: 1px solid;
     &:hover {
-        text-decoration: underline;
+        background-color: var(--primary-bg-color);
     }
 }
 
@@ -80,8 +83,21 @@ ul {
     padding: 0;
 }
 
+li {
+    margin-block: 4px;
+}
+
 li::marker {
     content: "- ";
+}
+
+code {
+    font-family: "Source Code Pro";
+    padding: 0.25em 0.5em;
+    font-size: 85%;
+    color: var(--tertiary-color);
+    background-color: #f9f9f9;
+    background-clip: padding-box;
 }
 
 img {
@@ -100,9 +116,13 @@ img {
 }
 
 .prompt {
+    margin-block: 2vh 1vh;
     font-weight: bold;
     &-whoami {
         color: var(--secondary-color);
+        &:hover {
+            background-color: var(--secondary-bg-color);
+        }
     }
     &-path {
         color: var(--primary-color);

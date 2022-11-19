@@ -9,7 +9,9 @@
         <hr>
         {{ post_macros::render_metadata(page=page) }}
         <hr>
-        {{page.content | safe}}
+        <div class="content">
+            {{page.content | safe}}
+        </div>
     </article>
 </div>
 {% endblock subcontent %}

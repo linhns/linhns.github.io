@@ -2,26 +2,29 @@
 {% import "macros/head.html" as head_macros -%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ head_macros::fonts() }}
-    <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) | safe }}">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="{{get_url(path='main.css', trailing_slash=false) | safe}}">
     <title>Nguyen Son Linh's Personal Website</title>
 </head>
+
 <body>
     <header>
         {{ prompt_macros::prompt(path="~", command="ls") }}
         <nav class="nav">
             {% for item in config.extra.nav_items %}
+            <div>
                 {% set url = item.url | replace(from="$BASE_URL", to=config.base_url) %}
                 {% if item.name is matching("([A-Za-z0-9])+\.([A-Za-z0-9])+") %}
-                    <a href="{{url | safe}}" class="nav-file-link">{{item.name}}</a>  
+                <a href="{{url | safe}}" class="nav-file-link">{{item.name}}</a>
                 {% else %}
-                    <a href="{{url | safe}}" class="nav-subpage-link">{{item.name}}</a>   
+                <a href="{{url | safe}}" class="nav-subpage-link">{{item.name}}</a>
                 {% endif %}
+            </div>
             {% endfor %}
         </nav>
     </header>
@@ -31,7 +34,9 @@
     </div>
 
     <footer>
-        <span>© {{config.extra.year}} Nguyen Son Linh. All opinions my own and do not reflect the views of my past, present and future employers. Mentions are not meant to be endorsements unless specified.</span>
+        <span>© {{config.extra.year}} Nguyen Son Linh. All opinions my own and do not reflect the views of my past,
+            present and future employers. Mentions are not meant to be endorsements unless specified.</span>
     </footer>
 </body>
+
 </html>
