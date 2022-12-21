@@ -17,7 +17,7 @@ description = "Application of well-known machine learning algorithm such as SVM,
 # The weight as defined on the Section page of the documentation.
 # If the section variable `sort_by` is set to `weight`, then any page that lacks a `weight`
 # will not be rendered.
-weight = 0
+weight = 1
 
 # A draft page is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
@@ -57,7 +57,7 @@ technologies = ["Python", "Scikit-learn", "PyTorch", "Numpy", "Pandas", "Tensorf
 links = [
     { url = "https://bit.ly/3rKEy5v", name = "Presentation" },
 ]
-short_description = "Human activities recognition"
+short_description = ""
 +++
 
 ### What I did

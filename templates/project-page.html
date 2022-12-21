@@ -11,9 +11,10 @@
 		</p>
 		<div class="project-links">
 			{% for link in page.extra.links %}
-				<a href="{{link | safe}}">{{link.name}}</a>
-				{% if loop.last %} {% break %} {% endif %}
-				|
+			{% set url = link.url | replace(from="$PROJECT_PAGE_URL/", to=page.permalink) %}
+			<a href="{{url | safe}}">{{link.name}}</a>
+			{% if loop.last %} {% break %} {% endif %}
+			|
 			{% endfor %}
 		</div>
 	</div>

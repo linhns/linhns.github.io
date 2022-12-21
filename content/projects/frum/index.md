@@ -17,7 +17,7 @@ description = "Frum is a forum-based platform that can be used as a discussion b
 # The weight as defined on the Section page of the documentation.
 # If the section variable `sort_by` is set to `weight`, then any page that lacks a `weight`
 # will not be rendered.
-weight = 0
+weight = 1
 
 # A draft page is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
