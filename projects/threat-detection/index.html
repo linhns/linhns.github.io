@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://linhns.github.io/main.css">
+    <link rel="icon" type="image/x-icon" href="https://linhns.github.io/images/icon.svg">
+    <title>Nguyen Son Linh's Personal Website</title>
+</head>
+
+<body>
+    <header>
+        
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~</span> $ <span class="prompt-command ">ls</span>
+    </div>
+
+        <nav class="nav">
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/experience" class="nav-subpage-link">experience</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/projects" class="nav-subpage-link">projects</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/blog" class="nav-subpage-link">blog</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/tags" class="nav-subpage-link">tags</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io" class="nav-file-link">about.txt</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/main_resume.pdf" class="nav-file-link">resume.pdf</a>
+                
+            </div>
+            
+        </nav>
+    </header>
+    <div class="container">
+        
+    
+	
+		
+		
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~</span> $ <span class="prompt-command ">cd projects</span>
+    </div>
+
+        
+		    
+			
+				
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~&#x2F;projects</span> $ <span class="prompt-command ">cat threat_detection&#x2F;index.md</span>
+    </div>
+
+			
+	    
+	
+    
+<div class="project">
+	<div class="project-info">
+		<h2 class="project-title">
+			Threat Detection in Images
+		</h2>
+		<p class="project-description">
+			An application of machine learning to classify images into different threat levels.
+		</p>
+		<div class="project-links">
+			
+			
+			<a href="https://linhns.github.io/projects/threat-detection/poster.pdf">Poster</a>
+			
+			|
+			
+			
+			<a href="https://github.com/linhns/cs4243-project">GitHub</a>
+			 
+		</div>
+	</div>
+	<div class="project-details">
+		<h3 id="task-definition">Task definition</h3>
+<p>Classify images into 3 different threat categories: normal(no threat), carrying(a weapon is being carried), threat(a threat can be detected)</p>
+<h3 id="implementation-details">Implementation details</h3>
+<p>Based on the dataset given to our group, it was clear that transfer learning is the only method at our disposal as while models are often trained on 6000-4000000 images, the dataset contains roughly only 4000 images after we manually removed those that were wrongly labeled. </p>
+<p>We followed the ML Pipeline quite closely and constructed a pluggable and configurable pipeline, which can be adapted for different models and hence different projects. It allows control of shuffling, batching, and minor image manipulations supported by tensorflow. </p>
+<p>At the modelling stage, the choice was to stick with a popular, heavily-adopted approach by the deep learning community, and thus we chose a ResNet50V2 trained on ImageNet as our feature extractor, attached a minimal classification head, and performed transfer learning and fine-tuning with early stopping to avoid overfitting.</p>
+<h3 id="results">Results</h3>
+<p>Despite our best efforts, we only achieved 78% accuracy, which is not deployable by any means. We suspected a deeper problem regarding data and problem concept, and ran the same process with InceptionV3 as a feature extractor. There were not much difference in terms of accuracy. Looking at the confusion matrices showed little, thereby confirming our intuition of data problems such as blurriness, misclassifications, and subtlety between <em>threat/carrying</em>. More details on our findings and future improvements are in the poster. </p>
+<h3 id="my-contribution">My contribution</h3>
+<p>I took sole responsibility to perform all programming-required parts, manually inspected the images and contributed to content selection for poster. During poster demo day, I conducted a presentation for 1 judge and assisted with Q&amp;A when teammates presented.</p>
+<p>_Note: This project was done for NUS module <a href="https://nusmods.com/modules/CS4243/computer-vision-and-pattern-recognition">CS4243 Computer Vision</a></p>
+
+	</div>
+</div>
+
+
+	
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~&#x2F;projects</span> $ <span class="prompt-command blinking-cursor">|</span>
+    </div>
+
+
+    </div>
+
+    <footer>
+        <span>© 2022 Nguyen Son Linh. All opinions my own and do not reflect the views of my past,
+            present and future employers. Mentions are not meant to be endorsements unless specified.</span>
+    </footer>
+</body>
+
+</html>
