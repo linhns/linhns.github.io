@@ -4,8 +4,17 @@
             margin-block: 3vh 0;
         }
         &-item {
+            > * {
+                display: inline-block;
+            }
+            > p {
+                display: block;
+            }
             &-page-link {
                 font-weight: bold;
+            }
+            &-extra-links {
+                float: right;
             }
         }
     }

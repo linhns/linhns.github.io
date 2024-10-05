@@ -1,5 +1,5 @@
 +++
-title = "Snipbox"
+title = "Snippetbox"
 description = "A pastebin clone built in Go"
 
 # The date of the post.
@@ -55,7 +55,7 @@ start_date = 2023-03-01
 end_date = 2023-04-03
 technologies = ["Go", "PostgreSQL"]
 links = [
-    { url = "https://snipbox.up.railway.app/", name = "Demo" },
+    { url = "https://snippetbox.up.railway.app/", name = "Demo" },
 ]
 short_description = ""
 +++
@@ -64,17 +64,13 @@ short_description = ""
 Everything
 
 ### Implementation details
-Backend was handled using go packages such as `httprouter`, `alice`, 
+Backend was handled using go packages such as `httprouter`, `alice`,
 and user interface was adopted from Alex Edwards's _Let's Go_ book.
 
 PostgreSQL was used since I'm more familiar with it, compared to MySQL. For the
 database driver, I chose `libpq` as it was easiest to integrate.
 
-I chose to host this on Railway as they have an interface quite similar to
-Heroku, which I used in the past and the experience has been smooth so far.
+Railway is chosen as the host for their generous hobby plan.
 
-_Note_: As this project is hosted for free on Railway, there will be some
-downtime per months as their free plan only allows maximum of 500 execution
-hours or $5 in credits. When either of these runs out, snipbox cannot be
-accessed.
-
+_2024 Update:_ More tests have been added, along with more use of Go Generics,
+which has matured enough.

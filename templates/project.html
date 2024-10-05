@@ -5,18 +5,14 @@
     <div class="projects-list">
         {% for page in section.pages %}
         <div class="projects-list-item">
-            <a href="{{ page.permalink | safe }}" class="projects-list-item-page-link">{{ page.title
-                }}</a><span>:</span>
-            {% if page.extra.short_description %}
-            <span>{{page.extra.short_description | safe}}</span>
-            {% endif %}
-            <span>(
+            <a href="{{ page.permalink | safe }}" class="projects-list-item-page-link">{{ page.title }}</a><span>:</span>
+            <div class="projects-list-item-extra-links">
                 {% for link in page.extra.links %}
                 {% set url = link.url | replace(from="$PROJECT_PAGE_URL/", to=page.permalink) %}
                 <a href="{{url | safe}}">{{link.name}}</a>
                 {% if loop.last %}{%break %}{% endif %}|
-                {% endfor %})
-            </span>
+                {% endfor %}
+            </div>
             <p>{{page.description}}</p>
         </div>
         {% endfor %}
