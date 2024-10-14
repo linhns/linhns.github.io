@@ -1,0 +1,1 @@
+header{margin-block:0 3vh}header .nav{display:flex;flex-wrap:wrap}header .nav>*{flex:0 0 33.33%}header .nav-subpage-link{color:var(--primary-color)}header .nav-file-link{color:var(--secondary-color)}header .nav-file-link:hover{background:var(--secondary-bg-color)}header .nav div{margin-block:0 5px}@media screen and (min-width: 1280px){header .nav>*{flex:0 0 25%}}

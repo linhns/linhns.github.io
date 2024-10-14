@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://linhns.github.io/main.css">
+    <link rel="icon" type="image/x-icon" href="https://linhns.github.io/images/icon.svg">
+    <title>Nguyen Son Linh's Personal Website</title>
+</head>
+
+<body>
+    <header>
+        
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~</span> $ <span class="prompt-command ">ls</span>
+    </div>
+
+        <nav class="nav">
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/experience" class="nav-subpage-link">experience</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/projects" class="nav-subpage-link">projects</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/blog" class="nav-subpage-link">blog</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/tags" class="nav-subpage-link">tags</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io" class="nav-file-link">about.txt</a>
+                
+            </div>
+            
+            <div>
+                
+                
+                <a href="https://linhns.github.io/main_resume.pdf" class="nav-file-link">resume.pdf</a>
+                
+            </div>
+            
+        </nav>
+    </header>
+    <div class="container">
+        
+    
+	
+		
+		
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~</span> $ <span class="prompt-command ">cd blog</span>
+    </div>
+
+        
+		    
+			
+		    	
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~&#x2F;blog</span> $ <span class="prompt-command ">cat how_i_built_this_website.md</span>
+    </div>
+ 
+	    	
+	    
+	
+    
+<div class="blog">
+    <article>
+        <div class="title">
+            <h1>How I built this website</h1>
+        </div>
+        <hr>
+        
+<div class="metadata">
+	<div class="published-date">
+		<span>Published on <time datetime="2022-11-19">November 19, 2022</time></span>
+	</div>
+	<div class="updated-date">
+		<span>Last updated on
+			<time datetime="2022-11-19">
+				November 19, 2022
+			</time>
+		</span>
+	</div>
+	
+<div class="tags">
+    Tags:
+    
+    <span><a href="https://linhns.github.io/tags/web/">web</a><span>,</span></span>
+    
+    <span><a href="https://linhns.github.io/tags/zola/">zola</a><span>,</span></span>
+    
+    <span><a href="https://linhns.github.io/tags/sass/">sass</a></span>
+    
+</div>
+
+	<div class="reading-time">
+		<span>Reading time: 4
+			minutes
+		</span>
+	</div>
+</div>
+
+        <hr>
+        <div class="content">
+            <h1 id="motivation"><a class="zola-anchor" href="#motivation" aria-label="Anchor link for: motivation">Motivation</a></h1>
+<p>After a few years of leaving my website consisting of just 2 files <code>index.html</code> and <code>style.css</code>, together with some miscellanous git files,
+I made a decision to upgrade it to include different sections and especially, a blog that I can write whenever I like.
+Obviously, using plain html files for this purpose is an arduous, painstaking task. Therefore I decided to go with an SSG.</p>
+<h1 id="execution"><a class="zola-anchor" href="#execution" aria-label="Anchor link for: execution">Execution</a></h1>
+<h2 id="why-i-chose-zola"><a class="zola-anchor" href="#why-i-chose-zola" aria-label="Anchor link for: why-i-chose-zola">Why I chose Zola</a></h2>
+<p>Static site generators have been around for a long time, and there are hundreds of them to choose from.
+<a href="https://jamstack.org/generators/">Jamstack</a> has a summary of all available SSGs with details of backend language and templating language.</p>
+<p>While I could go with more popular options on the list such as Jekyll or Hugo,
+I found out Zola is built on Rust, and I can't stress how much I love it. That said, Zola is not without its downsides, particularly
+regarding its template language Tera, which does not have editor support as much as other templating languages.
+However, Zola struck me in terms of simplicity, and its clear <a href="https://www.getzola.org/documentation/">documentation</a>
+shows exactly what needs to be done without all the fuss.
+That fuss is exactly why, up to now, I still cannot understand Hugo and believe it's a mess.
+One more thing, Zola is fast, extremely fast to build. I timed one of the production builds
+and it took approximately 1 minute for my content to show up.</p>
+<h2 id="how-i-decided-the-structure-of-this-website"><a class="zola-anchor" href="#how-i-decided-the-structure-of-this-website" aria-label="Anchor link for: how-i-decided-the-structure-of-this-website">How I decided the structure of this website</a></h2>
+<p>After choosing Zola as the SSG, I need to structure my website around how Zola works. Luckily, this is quite simple,
+and Zola allows users to freely construct their website, as long as content are stored in the <code>content</code> directory
+and there is a template to render it in <code>templates</code> directory. Since I want each section and its pages to have their own look,
+with some shared features. This is easy to do by creating <code>section.html</code> and extends it for a particular section, for example
+<code>blog.html</code> for <em>blog</em>.</p>
+<p>Currently, this website has 3 sections: <code>experience</code>, <code>projects</code>, <code>blog</code>. This is a good split for the content that I currently have,
+but may change if I need more in the future. I also added <code>tags</code> as a way for readers to filter my blog posts according to tags.</p>
+<h2 id="how-i-settle-on-the-style"><a class="zola-anchor" href="#how-i-settle-on-the-style" aria-label="Anchor link for: how-i-settle-on-the-style">How I settle on the style</a></h2>
+<p>The previous version of this website did not look that bad, however I felt it was just a demonstration of Bootstrap.
+That's why I wanted to create another look for it and in search of something new,
+I stumbled on <a href="http://elizas.website">Eliza Weisman's website</a> and I found her terminal-esque theme pretty exciting,
+thus I should attempt to make something similar to brush up my frontend skills, which I have barely used for a while.</p>
+<p>Since Zola suggests the use of Sass, I had to learn on the go, and currently, lots of my styling perhaps can be done
+in a simpler, more condensed manner. Right now, I would say that I'm pretty satisfied with the current look.</p>
+<h1 id="conclusion"><a class="zola-anchor" href="#conclusion" aria-label="Anchor link for: conclusion">Conclusion</a></h1>
+<h2 id="reflection"><a class="zola-anchor" href="#reflection" aria-label="Anchor link for: reflection">Reflection</a></h2>
+<p>Building my website has been a great joy so far. It's time-consuming of course,
+especially creating the dashed <code>&lt;hr&gt;</code>, which was harder than I thought.
+But I believe that you learn more from the tough moments of life than the easy ones, and I'm certain
+that I'm gonna go through many ordeals tougher than this in my life.</p>
+<h2 id="future"><a class="zola-anchor" href="#future" aria-label="Anchor link for: future">Future</a></h2>
+<p>There are features of Zola that I have not explored such as search and feeds,
+which I plan to add to this website as soon as I can.
+In the longer term, I may add some interactions to this website such as
+typing <code>cd ~/projects</code> will actually take readers to the <code>projects</code> section.</p>
+<hr />
+<p>I want to thanks <a href="https://github.com/hawkw">Eliza Weisman</a> for her great website that inspired my design and
+<a href="https://github.com/Xe">Christine Dodrill</a>(Xe Iaso) for another wonderful personal website, which influenced some of the customizations.
+Especially, the use of border as underline is extremely smart. I may also add some AI-generated images to my website soon :).</p>
+<hr />
+
+        </div>
+    </article>
+</div>
+
+	
+    <div class="prompt">
+        <a href="https:&#x2F;&#x2F;linhns.github.io" class="prompt-whoami">linhns@website</a>:<span class="prompt-path">~&#x2F;blog</span> $ <span class="prompt-command blinking-cursor">|</span>
+    </div>
+
+
+    </div>
+
+    <footer>
+        <span>© 2022 Nguyen Son Linh. All opinions my own and do not reflect the views of my past,
+            present and future employers. Mentions are not meant to be endorsements unless specified.</span>
+    </footer>
+</body>
+
+</html>
