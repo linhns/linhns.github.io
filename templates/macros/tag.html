@@ -1,9 +1,0 @@
-{% macro render_tags(tags) %}
-<div class="tags">
-    Tags:
-    {% for tag in tags %}
-    <span><a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{tag}}</a>{% if not loop.last
-        %}<span>,</span>{%endif%}</span>
-    {% endfor %}
-</div>
-{% endmacro %}
