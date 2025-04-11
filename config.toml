@@ -34,7 +34,7 @@ nav_items = [
     { url = "$BASE_URL/blog", name = "blog" },
     { url = "$BASE_URL/tags", name = "tags" },
     { url = "$BASE_URL", name = "about.txt" },
-    { url = "$BASE_URL/main_resume.pdf", name = "resume.pdf" },
+    { url = "$BASE_URL/NguyenSonLinh_Resume.pdf", name = "resume.pdf" },
 ]
 # Current year
-year = 2022
+year = 2025
