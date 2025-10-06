@@ -8,6 +8,16 @@ description: >
 
 baseurl: ""
 url: "https://linhns.github.io"
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 # Build settings
 # --------------
 remote_theme: "jekyll/minima@c27c54a"
@@ -34,6 +44,7 @@ exclude:
 minima:
   nav_pages:
     - blog.md
+    - projects.md
   skin: maple-light
   social_links:
     - title: GitHub

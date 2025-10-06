@@ -33,6 +33,26 @@ footer {
   }
 }
 
+.project-list {
+  list-style: none;
+  margin-left: 0;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  .project-link {
+    font-size: 1rem;
+  }
+}
+
+.project {
+  .project-header {
+    .project-links {
+      margin-bottom: 8px;
+    }
+  }
+}
 
 .social-media-list {
   list-style: none;
