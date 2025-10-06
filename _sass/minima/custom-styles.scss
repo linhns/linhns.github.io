@@ -1,0 +1,56 @@
+@include media-query($on-medium) {
+  .site-nav {
+    .nav-item {
+      margin-right: 15px;
+    }
+  }
+}
+
+footer {
+  .description {
+    font-style: italic;
+  }
+}
+
+.language-mermaid {
+  text-align: center;
+}
+
+.post-list {
+  list-style: none;
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .post-meta {
+    flex: 0 0 100px;
+    margin-right: 1rem;
+  }
+  a {
+    flex: 1;
+    text-decoration: none;
+  }
+}
+
+
+.social-media-list {
+  list-style: none;
+  display: initial;
+  li {
+    float: none;
+    text-align: start;
+    min-height: 25px;
+    a {
+      padding: 0;
+      border: none;
+      span {
+        &:first-of-type {
+          margin-right: 5px;
+        }
+
+      }
+    }
+  }
+}
+

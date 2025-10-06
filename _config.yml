@@ -1,0 +1,50 @@
+# Site-wide settings
+# ------------------
+title: Nguyen Son Linh
+author:
+  name: Nguyen Son Linh
+description: >
+  Code and life, observed through the passage of time.
+
+baseurl: ""
+url: "https://linhns.github.io"
+# Build settings
+# --------------
+remote_theme: "jekyll/minima@c27c54a"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+exclude:
+  - .sass_cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git/
+  - .gitignore
+  - README.md
+# Minima-specific settings (applicable to Minima v3 and above only)
+# -----------------------------------------------------------------
+minima:
+  nav_pages:
+    - blog.md
+  skin: maple-light
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/linhns"
+      username: linhns
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://linkedin.com/in/linhns"
+      username: linhns
+    - title: X
+      icon: x-twitter
+      url: "https://x.com/linhns01"
+      username: "@linhns01"
