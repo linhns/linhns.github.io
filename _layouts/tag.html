@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+<h1>Posts tagged "{{ page.tag }}"</h1>
+{% assign posts = site.tags[page.tag] %}
+<ul class="post-list">
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {%- for post in posts -%}
+  <li>
+    <time class="post-meta">{{ post.date | date: date_format }}</time>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+  </li>
+  {%- endfor -%}
+</ul>
+
+<p><a href="{{ '/tags/' | relative_url }}">← Back to all tags</a></p>
+

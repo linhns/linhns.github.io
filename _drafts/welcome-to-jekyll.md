@@ -2,9 +2,16 @@
 layout: post
 title: Welcome to Jekyll!
 date: 2025-10-05 00:38:22 +0700
-categories: jekyll update
+tags: [jekyll, update]
 mermaid: true
 ---
+
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -28,9 +35,9 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 $$
 \\begin{aligned}
-& \\phi(x,y) = \\phi \\left(\\sum\_{i=1}^n x_ie_i, \\sum\_{j=1}^n y_je_j \\right)
+&\\phi(x,y) = \\phi \\left(\\sum\_{i=1}^n x_ie_i, \\sum\_{j=1}^n y_je_j \\right)
 = \\sum\_{i=1}^n \\sum\_{j=1}^n x_i y_j \\phi(e_i, e_j) = \\
-& (x_1, \\ldots, x_n) \\left( \\begin{array}{ccc}
+&(x_1, \\ldots, x_n) \\left( \\begin{array}{ccc}
 \\phi(e_1, e_1) & \\cdots & \\phi(e_1, e_n) \\
 \\vdots & \\ddots & \\vdots \\
 \\phi(e_n, e_1) & \\cdots & \\phi(e_n, e_n)

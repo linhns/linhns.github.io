@@ -18,6 +18,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  - scope:
+      path: "tags"
+      type: "pages"
+    values:
+      layout: "tag"
+      permalink: /tags/:name
 # Build settings
 # --------------
 remote_theme: "jekyll/minima@c27c54a"
@@ -45,6 +51,7 @@ minima:
   nav_pages:
     - blog.md
     - projects.md
+    - experience.md
   skin: maple-light
   social_links:
     - title: GitHub
