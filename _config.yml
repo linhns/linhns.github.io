@@ -23,7 +23,7 @@ defaults:
       type: "pages"
     values:
       layout: "tag"
-      permalink: /tags/:basename
+      permalink: /tags/:basename/
 # Build settings
 # --------------
 remote_theme: "jekyll/minima@c27c54a"
