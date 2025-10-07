@@ -46,6 +46,10 @@ layout: base
     {{ content }}
   </div>
 
+  <footer class="post-footer">
+    <a href="{{ '/blog/' | relative_url }}">← Back to all posts</a>
+  </footer>
+
   {% if jekyll.environment == 'production' -%}
     {% if page.comments == false -%}
     <div class="comments-disabled-message">
@@ -57,8 +61,4 @@ layout: base
   {% endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-
-  <footer class="post-footer">
-    <a href="{{ '/blog/' | relative_url }}">← Back to all posts</a>
-  </footer>
 </article>
