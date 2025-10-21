@@ -16,7 +16,7 @@ Pages][github-pages], so the simplest way was the right way.
 
 As I got nearer to the end of my university time, I jumped on the Rust bandwagon
 and the "build your own" trend, thus leading me to create my own templates to
-use with [Zola][zola]. The result? I got the look I wanted that looked like
+use with [Zola]. The result? I got the look I wanted that looked like
 I put the default Ubuntu terminal on the internet, the sections and navigation
 I imagined and my website built in less than a second.
 
@@ -29,21 +29,21 @@ be handled by theme creators, and that really hinders its adoption even today.
 When choosing the tool for this remake, there were a few criteria that I sought
 for:
 
-* **Stability**: Dependability and future-proof tools triumph fancy but unstable
+- **Stability**: Dependability and future-proof tools triumph fancy but unstable
   ones. I don't want to suddenly see my site not building because of a SSG has
   a breaking change.
-* **Simplicity**: There are just enough features that I need, with as few
+- **Simplicity**: There are just enough features that I need, with as few
   unnecessary decorations as possible.
-* **Sane defaults**: There's no point reinventing the wheel unless you are
+- **Sane defaults**: There's no point reinventing the wheel unless you are
   hardcore, and that often do not go too well.
 
 Using these criteria, **Jekyll** was my selection. Its default theme,
-[minima][minima], comes with everything I need, and GitHub Pages does support
+[minima], comes with everything I need, and GitHub Pages does support
 using a remote theme so I could use `v3` without any hassle. From there on,
 I made some small tweaks to the templates, bolted on Mermaid, MathJax and
-[giscus][giscus]. That's it.
+[giscus]. That's it.
 
-[github-pages]: https://docs.github.com/en/pages
-[zola]: https://www.getzola.org
-[minima]: https://github.com/jekyll/minima
 [giscus]: https://giscus.app
+[github-pages]: https://docs.github.com/en/pages
+[minima]: https://github.com/jekyll/minima
+[zola]: https://www.getzola.org

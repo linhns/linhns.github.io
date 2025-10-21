@@ -6,6 +6,7 @@ modified_date: 2025-10-07 18:12:00 +0800
 tags: [web, zola, frontend]
 mermaid: true
 ---
+
 # Motivation
 
 After a few years of leaving my website consisting of just 2 files `index.html` and `style.css`, together with some miscellanous git files,
@@ -65,13 +66,12 @@ which I plan to add to this website as soon as I can.
 In the longer term, I may add some interactions to this website such as
 typing `cd ~/projects` will actually take readers to the `projects` section.
 
----
+______________________________________________________________________
 
 I want to thanks [Eliza Weisman](https://github.com/hawkw) for her great website that inspired my design and
 [Christine Dodrill](https://github.com/Xe)(Xe Iaso) for another wonderful personal website, which influenced some of the customizations.
 Especially, the use of border as underline is extremely smart. I may also add some AI-generated images to my website soon :).
 
----
-
+______________________________________________________________________
 
 *Updated 2025-10-07*: Please note that this post is outdated, as I have since migrated my blog to Jekyll.

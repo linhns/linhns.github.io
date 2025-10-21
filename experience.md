@@ -9,9 +9,9 @@ permalink: /experience
 
 |                                  Position                                  |          Company           |    Start    |     End      |
 | :------------------------------------------------------------------------: | :------------------------: | :---------: | :----------: |
-| [Sofware Engineer](#software-engineer-at-creative-medtech-solutions)       | Creative Medtech Solutions | Aug 8, 2023 | Apr 8, 2025  |
+|    [Sofware Engineer](#software-engineer-at-creative-medtech-solutions)    | Creative Medtech Solutions | Aug 8, 2023 | Apr 8, 2025  |
 | [Sofware Engineer Intern](#software-engineer-intern-at-omron-asia-pacific) | Omron Asia Pacific Pte Ltd | Jan 3, 2022 | Jun 17, 2022 |
-|             [Student Ambassador](#student-ambassador-for-nus)              |  NUS Office of Admissions  |  Aug 2021   | May 2023     |
+|             [Student Ambassador](#student-ambassador-for-nus)              |  NUS Office of Admissions  |  Aug 2021   |   May 2023   |
 
 ### Software Engineer at Creative Medtech Solutions
 
