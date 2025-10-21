@@ -52,7 +52,7 @@ minima:
     - blog.md
     - projects.md
     - experience.md
-  skin: modernblue
+  skin: modernblue-light
   social_links:
     - title: GitHub
       icon: github

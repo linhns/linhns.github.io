@@ -6,6 +6,12 @@
   }
 }
 
+a {
+  &:hover {
+    text-decoration-color: $link-hover-color;
+  }
+}
+
 footer {
   .description {
     font-style: italic;
@@ -22,15 +28,18 @@ footer {
 
 .post-list {
   list-style: none;
+
   li {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
   }
+
   .post-meta {
     flex: 0 0 100px;
     margin-right: 1rem;
   }
+
   a {
     flex: 1;
     text-decoration: none;
@@ -40,11 +49,13 @@ footer {
 .project-list {
   list-style: none;
   margin-left: 0;
+
   li {
     &:not(:last-child) {
       margin-bottom: 8px;
     }
   }
+
   .project-link {
     font-size: 1rem;
   }
@@ -58,16 +69,25 @@ footer {
   }
 }
 
+.site-nav {
+  .nav-item {
+    text-decoration-color: $brand-color;
+  }
+}
+
 .social-media-list {
   list-style: none;
   display: initial;
+
   li {
     float: none;
     text-align: start;
     min-height: 25px;
+
     a {
       padding: 0;
       border: none;
+
       span {
         &:first-of-type {
           margin-right: 5px;
@@ -77,4 +97,3 @@ footer {
     }
   }
 }
-

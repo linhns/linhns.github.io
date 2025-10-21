@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Default color scheme settings
-// These are overridden in cherry-light.css and cherry-dark.scss
+// These are overridden in modernblue-light.css and modernblue-dark.scss
 
 $color-scheme-auto: true !default;
 $color-scheme-dark: false !default;
@@ -22,10 +22,10 @@ $lm-text-color:            $lm-brand-color-dark !default;
 $lm-background-color:      #fdfdfd !default;
 $lm-code-background-color: #f6f8fa !default;
 
-$lm-link-base-color:       #005e61 !default;
+$lm-link-base-color:       #006bde !default;
 // $lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
-$lm-link-visited-color:    #002b60 !default;
-$lm-link-hover-color:      $lm-text-color !default;
+$lm-link-visited-color:    $lm-link-base-color !default;
+$lm-link-hover-color:      #0056b3 !default;
 
 $lm-border-color-01:       $lm-brand-color-light !default;
 $lm-border-color-02:       lighten($lm-brand-color, 35%) !default;
