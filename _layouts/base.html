@@ -10,6 +10,11 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
+        {% if page.url == '/' %}
+        <p class="views-disclaimer">
+          Views are my own, not those of any employer. Mentions are not endorsements unless stated.
+        </p>
+        {% endif %}
       </div>
     </main>
 

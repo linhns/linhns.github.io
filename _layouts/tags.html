@@ -2,18 +2,17 @@
 layout: base
 ---
 
-<div class="tags">
+<div class="tags tags-index">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
   {{ content }}
-  <ul class="all-tags">
+  <ul class="all-tags blog-tags">
     {% assign tags_list = site.tags | sort %}
     {% for tag in tags_list %}
       {% assign slug = tag[0] | slugify %}
       <li>
-        <a href="{{ '/tags/' | append: slug | relative_url }}">{{ tag[0] }}</a>
-        <span>({{ tag[1].size }})</span>
+        <a class="blog-tag" href="{{ '/tags/' | append: slug | append: '/' | relative_url }}">{{ tag[0] | escape }}</a>
       </li>
     {% endfor %}
   </ul>

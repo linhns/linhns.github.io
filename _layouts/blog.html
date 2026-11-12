@@ -2,8 +2,8 @@
 layout: base
 ---
 
-<div class="home">
-  <header>
+<div class="blog-index">
+  <header class="blog-header">
     <p class="browse-tags">
       <a href="{{ '/tags/' | relative_url }}">→ Browse by tags</a>
     </p>
@@ -26,20 +26,8 @@ layout: base
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+    {% include blog-posts.html posts=posts %}
+
 
     {% if site.paginate %}
       <div class="pager">

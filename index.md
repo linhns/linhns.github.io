@@ -1,18 +1,17 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 list_title: Recent Posts
 ---
 
-Hi 👋, I'm Linh.
+Hi 👋, I'm Son Linh.
 
-I'm an experimenter first and software engineer second. Polyglot in terms of
-programming languages. Currently, I'm working at [ANZ](https://www.anz.com.au/).
+I'm pursuing a master's degree in Information Engineering at the
+[Technical University of Munich](https://www.tum.de/en/).
 
-Previously, I worked at [Omron](https://www.omron.com/) and Creative Medtech
-Solutions.
+Previously, I worked on identity and access management at
+[ANZ](https://www.anz.com.au/), biopsy machines at Creative Medtech Solutions,
+and industrial robotics at [Omron](https://www.omron.com/).
 
-When not programming, I enjoy playing pool and watching football. Always have
-time for a pint of good stuff.
+I'm a polyglot in terms of programming languages.
+
+When not busy, I enjoy watching sports. Always have time for a good pint.
