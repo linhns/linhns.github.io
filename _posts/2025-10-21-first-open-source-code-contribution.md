@@ -35,7 +35,7 @@ Here’s what I’ve learned:
 1. **Notice bugs or rough edges** — the smaller, the better.
 1. **Fix and contribute** — if you can, submit your solution as a pull request.
 
-[minima]: https://github.com/jekyll/minima
-[minima-pr-912]: https://github.com/jekyll/minima/pull/912
 [first-contributions]: https://firstcontributions.github.io/
 [for-good-first-issue]: https://forgoodfirstissue.github.com/
+[minima]: https://github.com/jekyll/minima
+[minima-pr-912]: https://github.com/jekyll/minima/pull/912

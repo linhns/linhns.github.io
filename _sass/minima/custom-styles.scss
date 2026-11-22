@@ -8,6 +8,15 @@
   border-bottom: 0;
   padding-top: 5px;
 
+  .site-nav {
+    position: relative;
+    z-index: 1;
+
+    @include media-query($on-medium) {
+      position: absolute;
+    }
+  }
+
   .wrapper {
     position: relative;
 
@@ -49,9 +58,10 @@
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - #{$spacing-unit});
-  max-width: 830px;
+  max-width: $content-width + $spacing-unit;
   height: 1px;
   background: $border-color-01;
+  pointer-events: none;
 
   @include media-query($on-medium) {
     width: calc(100% - #{$spacing-unit * 0.6});
