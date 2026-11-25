@@ -12,7 +12,7 @@ layout: base
     {% for tag in tags_list %}
       {% assign slug = tag[0] | slugify %}
       <li>
-        <a class="blog-tag" href="{{ '/tags/' | append: slug | append: '/' | relative_url }}">{{ tag[0] | escape }}</a>
+        <a class="blog-tag" href="{{ '/tags/' | append: slug | append: '/' | relative_url }}">{{ slug }}</a>
       </li>
     {% endfor %}
   </ul>

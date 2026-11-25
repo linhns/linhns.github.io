@@ -15,7 +15,7 @@
         <ul class="blog-tags" aria-label="Tags">
           {%- for tag in post.tags -%}
           {%- assign tag_slug = tag | slugify -%}
-          <li><a class="blog-tag" href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag | escape }}</a></li>
+          <li><a class="blog-tag" href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag_slug }}</a></li>
           {%- endfor -%}
         </ul>
         {%- endif -%}
